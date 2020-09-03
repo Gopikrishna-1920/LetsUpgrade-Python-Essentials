@@ -1,0 +1,153 @@
+##1.list and its default functions
+append()
+      ->adds an element at the end of the list.
+clear()
+      ->removes all the elements from the list.
+insert()
+      ->adds an element at the specified position.
+copy()
+      ->returns a copy of the list.
+remove()
+      ->removes the particular element in the list.
+      
+lst=[1,2,3,4,5,6,7,8,9]
+lst.append(34)
+print(lst)
+lst.insert(0,2019)
+print(lst)
+lst1=lst.copy()
+print("the copied list is: ")
+print(lst1)
+lst.remove(1)
+print(lst)
+lst.clear()
+print("the empty list is printed")
+print(lst)
+
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 34]
+[2019, 1, 2, 3, 4, 5, 6, 7, 8, 9, 34]
+the copied list is: 
+[2019, 1, 2, 3, 4, 5, 6, 7, 8, 9, 34]
+[2019, 2, 3, 4, 5, 6, 7, 8, 9, 34]
+the empty list is printed
+[]
+
+##2.dictionaries and its default functions
+    get()
+        ->returns the value of the specified key.\n",
+    keys()
+        ->returns a list containing the dictionaries keys.\n",
+    clear()
+        ->removes all elements from the dictionary.\n",
+    update()
+        ->updates the dictionary with the specified key-value pairs.\n",
+    values()\n
+        ->returns a list of all the values in the dictionary."
+dict={
+      "name":"gopikrishna",
+      "age" :"20",
+      "profession":"student",
+      "hobbies":"reading"
+   }
+print(dict)
+print(dict.get("age"))
+print(dict.keys())
+print(dict.values())
+print(dict.clear())
+dict[1]="im_inevitable"
+print(dict)    
+
+{'name': 'gopikrishna', 'age': '20', 'profession': 'student', 'hobbies': 'reading'}
+20
+dict_keys(['name', 'age', 'profession', 'hobbies'])
+dict_values(['gopikrishna', '20', 'student', 'reading'])
+None
+{1: 'im_inevitable'}
+
+##3.sets and its default functions.
+add()
+    ->adds an element to the set.
+clear()
+    ->removes all the elements from the set.
+pop()
+    ->removes and returns an arbitary set element.Raises KeyError if the set is empty.
+remove()
+    ->removes an element from the set.Raises KeyError if the set is empty.
+update()
+    ->update the set with the union of this set and others.
+    
+set1={1,2,3,"gopikrishna","rajavarapu"}
+set1.add(5)
+print(set1)
+set1.clear()
+print(set1)
+set1.update({11,12,13})
+print(set1)
+set1.pop()
+print(set1)
+set1.remove(13)
+print(set1)
+    
+{'gopikrishna', 1, 2, 3, 5, 'rajavarapu'}
+set()
+{11, 12, 13}
+{12, 13}
+{12}
+
+##4.tuple and its default methods.
+count()
+    ->returns the number of a times a specified value occurs in a tuple.
+index()
+    ->searches the tuple for a specified value and returns the position of where it was found.
+
+    ***the above two methods are only used by tuple object can call.
+
+len()
+    ->prints the length of the tuple.
+del
+    ->this keyword deletes the tuple we have created.
+    
+    
+tuple=(1,1,1,2,222,22,4,5,6,888)
+print(tuple)
+print(tuple.count(1))
+print(tuple.index(222))
+print(len(tuple))
+del tuple
+print("and the empty tuple is:")
+print(tuple)
+
+(1, 1, 1, 2, 222, 22, 4, 5, 6, 888)
+3
+4
+10
+and the empty tuple is:
+<class 'tuple'>
+
+##5.Strings and its default methods.
+isalpha()
+    ->this method checks whether the string consists of alphabetic characters only.
+isalnum()
+    ->this method checks whether the string consists of alphanumeric characters or not.
+find()
+    ->this methods returns the index value of the character,otherwise prints -1.
+swapcase()
+    ->this method returns a copy of the string in which all the case-based characters have had their case swapped.
+in
+    ->this method returns True if the string contains the substring.
+    
+str1='go0pi123iikkkii GOPIkrishna gopi'
+print(str1)
+print(str1.swapcase())
+print(str1.isalnum())
+print(str1.isalpha())
+print(str1.find('gopi'))
+print('gopi'in str1)
+
+go0pi123iikkkii GOPIkrishna gopi
+GO0PI123IIKKKII gopiKRISHNA GOPI
+False
+False
+28
+True
