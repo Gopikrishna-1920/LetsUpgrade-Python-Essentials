@@ -1,0 +1,22 @@
+# LetsUpgrade-Python-Essentials
+mini=int(input("enter minimum:"))
+maxi=int(input("enter maximum:"))
+for i in range(mini,maxi):
+    j=i
+    k=str(i)
+    l=len(k)
+    sum1=0
+    while(i>=1):
+        a=i%10
+        sum1=sum1+(a**l)
+        i=i//10
+    if(sum1==j):
+        print("the first armstrong number in this range is:")
+        print(j)
+        break
+        
+       
+enter minimum:1042000
+enter maximum:702648265
+the first armstrong number in this range is:
+1741725
