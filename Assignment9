@@ -1,0 +1,58 @@
+# LetsUpgrade-Python-Essentials
+num=int(input("enter a number")) 
+if num > 1: 
+  for i in range(2, num): 
+      if (num % i) == 0: 
+          print(num, "is not a prime number") 
+          break
+  else: 
+      print(num, "is a prime number") 
+  
+else: 
+  print(num, "is not a prime number")
+  
+
+enter a number12
+12 is not a prime number
+
+def test_prime(n):
+    if (n==1):
+        return False
+    elif (n==2):
+        return True;
+    else:
+        for x in range(2,n):
+            if(n % x==0):
+                return False
+        return True             
+print(test_prime(3))
+True
+
+print(test_prime(9999))
+False
+
+print(test_prime(15))
+False
+
+print(test_prime(191))
+False
+
+
+def generator():
+    i=1
+    rng=1
+    while rng<1000:
+        num=str(i)
+        sum1=0
+        for j in num:
+            sum1+=int(j)**len(num)
+        if i==sum1:
+            yield i
+        i+=1
+        rng+=1
+
+for i in generator():
+    print(i)
+ 
+ 
+ 1 2 3 4 5 6 7 8 9 153 370 371 407 
